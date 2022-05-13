@@ -1,0 +1,53 @@
+@import "../src/scss/_variables.scss";
+@import "../src/scss/_reset.scss";
+@import "../src/scss/_mixin.scss";
+
+.header{
+
+  &__arrow-left{
+    margin-right: 10px;
+  }
+  &__arrow-right{
+    transform: rotate(180deg);
+    margin-left: 10px;
+  }
+
+  &__info-top {
+    @include flex;
+    height: 30px;
+    width: 100%;
+    background-color: $darkViolet;
+
+    &__wrapper {
+      @include flex;
+      height: 100%;
+      // max-width: 495px;
+      justify-content: space-between;
+
+      &--text {
+        color: $white;
+        font-size: calculate-rem(12);
+        font-weight: 300;
+        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          width: 1px;
+          height: 12px;
+          background-color: $white;
+          display: inline-block;
+          margin: 0 10px;
+        }
+        &:last-child{
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      &--text-bold {
+        font-weight: 700;
+      }
+    }
+  }
+}
