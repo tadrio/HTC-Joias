@@ -2,14 +2,14 @@
 @import "../src/scss/_reset.scss";
 @import "../src/scss/_mixin.scss";
 
-.header{
-
-  &__arrow-left{
-    margin-right: 10px;
+.header {
+  background-color: $violet;
+  &__arrow-left {
+    margin-right: 22px;
   }
-  &__arrow-right{
+  &__arrow-right {
     transform: rotate(180deg);
-    margin-left: 10px;
+    margin-left: 22px;
   }
 
   &__info-top {
@@ -38,7 +38,7 @@
           display: inline-block;
           margin: 0 10px;
         }
-        &:last-child{
+        &:last-child {
           &::after {
             display: none;
           }
@@ -47,6 +47,106 @@
 
       &--text-bold {
         font-weight: 700;
+        color: $white;
+        font-size: calculate-rem(12);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__menu {
+    @include container-center;
+    height: 79px;
+    max-width: 100%;
+    @include flex;
+
+    &__logo {
+      font-family: "Ovo", serif;
+      text-transform: uppercase;
+      font-size: calculate-rem(48);
+      text-decoration: none;
+      color: $white;
+      margin-right: 31px;
+    }
+
+    &__container {
+      max-width: 1217px;
+
+      &--list {
+        @include flex;
+        position: relative;
+      }
+
+      &--link {
+        text-decoration: none;
+        color: $white;
+        font-size: calculate-rem(14);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 31px;
+
+        &:hover {
+          color: $purplishGrey;
+        }
+      }
+
+      &--icons > img {
+        margin-right: 31px;
+      }
+    }
+
+    &__category-wrapper {
+      width: max-content;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      border-top: solid 6px $darkViolet;
+      background-color: $white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      &--color {
+        width: max-content;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-top: solid 6px $darkViolet;
+        background-color: $violet;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      }
+    }
+    &__category-item {
+      width: 100%;
+      &:hover {
+        background-color: $lightGrey;
+      }
+
+      &--color {
+        &:hover {
+          background-color: $darkViolet;
+        }
+      }
+    }
+    &__category-list {
+      width: 100%;
+      margin: 0 22px 0 26px;
+    }
+    &__category-link {
+      color: $black;
+      width: 100%;
+      text-decoration: none;
+      line-height: calculate-rem(40);
+      font-size: calculate-rem(14);
+      font-weight: 400;
+      text-transform: capitalize;
+      margin: 0 22px 0 26px;
+      &--color {
+        color: $white;
+        width: 100%;
+        text-decoration: none;
+        line-height: calculate-rem(40);
+        font-size: calculate-rem(14);
+        font-weight: 400;
+        text-transform: capitalize;
+        margin: 0 22px 0 26px;
       }
     }
   }
