@@ -3,9 +3,15 @@
    License: none (public domain)
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Ovo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 *{
 	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+button, a{
+	cursor: pointer;
+	text-decoration: none;
 }
 
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,

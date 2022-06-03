@@ -10,7 +10,6 @@
   </head>
   <body>
     <header class="header">
-
       <section class="header__info-top">
         <img
           class="header__arrow-left"
@@ -28,12 +27,18 @@
       </section>
 
       <section class="header__menu">
-        
         <a href="/" class="header__menu__logo">htc jóias</a>
 
+        <div class="header__menu-burger">
+          <img
+            src="./assets/img/nav-burger.svg"
+            alt="linhas de menu"
+            title="3 linhas horizontais indicando o menu"
+          />
+        </div>
         <nav class="header__menu__container">
           <ul class="header__menu__container--list">
-            <li class="header__menu__container--list">
+            <!-- <li class="header__menu__container--list">
               <a class="header__menu__container--link" href="#"">água marinha</a>
               <ul class="header__menu__category-wrapper">
                 <li class="header__menu__category-item">
@@ -48,64 +53,234 @@
               </ul>
             </li>
             <li>
-              <a class="header__menu__container--link" href="#"">ametista</a>
+              <a class="header__menu__container--link" href="#">ametista</a>
             </li>
             <li>
-              <a class="header__menu__container--link" href="#"">berilo</a>
+              <a class="header__menu__container--link" href="#">berilo</a>
             </li>
             <li>
-              <a class="header__menu__container--link" href="#"">berilo</a>
+              <a class="header__menu__container--link" href="#">berilo</a>
             </li>
             <li>
-              <a class="header__menu__container--link" href="#"">esmeralda</a>
+              <a class="header__menu__container--link" href="#">esmeralda</a>
             </li>
             <li>
-              <a class="header__menu__container--link" href="#"">topázio imperial</a>
+              <a class="header__menu__container--link" href="#">topázio imperial</a>
             </li>
             <li class="header__menu__container--list">
-              <a class="header__menu__container--link" href="#"">turmalina</a>
+              <a class="header__menu__container--link" href="#">turmalina</a>
               <ul class="header__menu__category-wrapper--color">
                 <li class="header__menu__category-item--color">
-                    <a class="header__menu__category-link--color" href="#"">Turmalina - Verde Água</a>
+                    <a class="header__menu__category-link--color" href="#">Turmalina - Verde Água</a>
                 </li>
                 <li class="header__menu__category-item--color">
-                    <a class="header__menu__category-link--color" href="#"">Turmalina - Verde Bandeira</a>
+                    <a class="header__menu__category-link--color" href="#">Turmalina - Verde Bandeira</a>
                 </li>
                 <li class="header__menu__category-item--color">
-                    <a class="header__menu__category-link--color" href="#"">Turmalina - Verde Amarelado</a>
+                    <a class="header__menu__category-link--color" href="#">Turmalina - Verde Amarelado</a>
                 </li>
                 <li class="header__menu__category-item--color">
-                    <a class="header__menu__category-link--color" href="#"">Turmalina - Verde Pirinei</a>
+                    <a class="header__menu__category-link--color" href="#">Turmalina - Verde Pirinei</a>
                 </li>
                 <li class="header__menu__category-item--color">
-                    <a class="header__menu__category-link--color" href="#"">Ver todos</a>
+                    <a class="header__menu__category-link--color" href="#">Ver todos</a>
                 </li>
               </ul>
             </li>
             <li>
               <a class="header__menu__container--link" href="#"">outros</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
-        
+
         <div class="header__menu__container--icons">
           <img
             src="./assets/img/nav-search.svg"
+            class="loupe"
             alt="ícone de lupa"
             title="ícone representando uma lupa composta por um circulo branco e um haste na diagonal"
           />
           <img
             src="./assets/img/nav-user.svg"
+            class="user"
             alt="ícone de usuário"
             title="ícone representando uma uma pessoa, composta de um círculo superior representando a cabeça e um semi-círculo inferior representando o corpo"
           />
           <img
             src="./assets/img/nav-bag.svg"
+            class="bag"
             alt="ícone de sacola"
             title="ícone representando uma lupa composta por um circulo branco e um haste na diagonal"
           />
         </div>
+        <nav class="header__menu-mobile active">
+          <div class="header__menu-mobile--menu">
+            <ul>
+              <li class="header__menu-mobile--menu-wrapper">
+                <a href="#" class="header__menu-mobile--menu-nav">
+                  <div class="header__menu-mobile--menu-nav-icons">
+                    <img
+                      src="./assets/img/nav-user.svg"
+                      alt="ícone de usuário"
+                      title="ícone representando uma uma pessoa, composta de um círculo superior representando a cabeça e um semi-círculo inferior representando o corpo"
+                    />
+                  </div>
+                  <span class="header__menu-mobile--menu-title"
+                    >Entre ou Cadastre-se
+                  </span>
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper">
+                <a href="#" class="header__menu-mobile--menu-nav">
+                  <div class="header__menu-mobile--menu-nav-icons">
+                    <img
+                      src="./assets/img/nav-box.svg"
+                      alt="ícone de usuário"
+                      title="ícone representando uma uma pessoa, composta de um círculo superior representando a cabeça e um semi-círculo inferior representando o corpo"
+                    />
+                  </div>
+                  <span class="header__menu-mobile--menu-title"
+                    >Meus pedidos
+                  </span>
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper">
+                <a href="#" class="header__menu-mobile--menu-nav">
+                  <div class="header__menu-mobile--menu-nav-icons">
+                    <img
+                      src="./assets/img/nav-bag.svg"
+                      alt="ícone de usuário"
+                      title="ícone representando uma uma pessoa, composta de um círculo superior representando a cabeça e um semi-círculo inferior representando o corpo"
+                    />
+                  </div>
+                  <span class="header__menu-mobile--menu-title"
+                    >Meu carrinho
+                  </span>
+                </a>
+              </li>
+              <!-- OPTIONS MENU MOBILE -->
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Água Marinha
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Ametista
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Berilo
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Esmeralda
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Topázio Imperial
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Turmalina
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    />
+                </a>
+              </li>
+              <li class="header__menu-mobile--menu-wrapper-items">
+                
+                
+                <!-- <a href="#" class="header__menu-mobile--menu-nav-item">
+                  <span class="header__menu-mobile--menu-title-item"
+                    >Turmalina
+                  </span>
+                  <img
+                    src="./assets/img/nav-mobile-arrow.svg"
+                    alt="seta de navegação"
+                    title="seta apontando para baixo indicando que o menu pode ser expandido"
+                    class="mobile-nav-arrow"
+                    /> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__menu-mobile--menu-close">
+            <button class="header__menu-mobile--menu-close-button">
+              <img
+                src="./assets/img/nav-close.svg"
+                alt="botão de fechar"
+                title="letra X indicando o botão de fechar o menu mobile"
+                class="header__menu-mobile--menu-close-img"
+              />
+            </button>
+          </div>
+        </nav>
       </section>
+      <form class="header__menu__mobile-search">
+        <input
+          class="header__menu__mobile-search-input"
+          type="text"
+          placeholder="O que você procura?"
+        />
+        <button class="header__menu__mobile-search-button">
+          <img
+            src="./assets/img/nav-search.svg"
+            class="header__menu__mobile-search-button-img"
+            alt="ícone de lupa"
+            title="ícone representando uma lupa composta por um circulo branco e um haste na diagonal"
+          />
+        </button>
+      </form>
     </header>
   </body>
 </html>
