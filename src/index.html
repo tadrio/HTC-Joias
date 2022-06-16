@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTC JOIAS</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/swiper-carrousel.js" type="module" defer></script>
   </head>
   <body>
     <header class="header">
@@ -63,7 +65,7 @@
             title="ícone representando uma lupa composta por um circulo branco e um haste na diagonal"
           />
         </div>
-        <nav class="header__menu-mobile active">
+        <nav class="header__menu-mobile">
           <div class="header__menu-mobile--menu">
             <ul>
               <li class="header__menu-mobile--menu-wrapper">
@@ -110,92 +112,6 @@
               </li>
               <ul class="menu-mobile-options">
                 <!-- OPTIONS MENU MOBILE -->
-                <!-- <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Água Marinha
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Ametista
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Berilo
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Esmeralda
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Topázio Imperial
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Turmalina
-                    </span>
-                  </a>
-                </li>
-                <li class="header__menu-mobile--menu-wrapper-category">
-                  <a href="#" class="header__menu-mobile--menu-nav-category">
-                    <span class="header__menu-mobile--menu-title-category"
-                      >Outros
-                    </span>
-                    <img
-                      src="./assets/img/nav-mobile-arrow.svg"
-                      alt="seta de navegação"
-                      title="seta apontando para baixo indicando que o menu pode ser expandido"
-                      class="mobile-nav-arrow"
-                    />
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#" class="header__menu-mobile--menu-nav-subcategory">
-                        <span class="header__menu-mobile--menu-title-subcategory">
-                          Citrino
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="header__menu-mobile--menu-nav-subcategory-child">
-                        <span class="header__menu-mobile--menu-title-subcategory-child">
-                          Safira
-                        </span>
-                        <img
-                          src="./assets/img/nav-mobile-arrow-sub.svg"
-                          alt="seta de navegação"
-                          title="seta apontando para baixo indicando que o menu pode ser expandido"
-                          class="mobile-nav-arrow"
-                        />
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="#" class="header__menu-mobile--menu-nav-item">
-                            <span class="header__menu-mobile--menu-title-item">
-                              Safira - Amarelo
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li> -->
               </ul>
             </ul>
           </div>
@@ -227,5 +143,36 @@
         </button>
       </form>
     </header>
+    <main class="body">
+      <section class="main-banner swiper">
+        <div class="main-banner__mobile-content">
+          <h2>Condição Especial</h2>
+          <h3>de inauguração</h3>
+          <span>Compre em até 10X sem juros!</span>
+            <button>Quero Comprar</button>
+        </div>
+        <div class="main-banner__wrapper swiper-wrapper">
+          <img class="main-banner__wrapper__image swiper-slide" src="./assets/img/carrousel1.png">
+          <img class="main-banner__wrapper__image swiper-slide" src="./assets/img/carrousel1.png">
+          <img class="main-banner__wrapper__image swiper-slide" src="./assets/img/carrousel1.png">
+        </div>
+        <div class="swiper-pagination main-banner__bullets"></div>
+        <div class="swiper-button-prev main-banner__arrow"></div>
+        <div class="swiper-button-next main-banner__arrow"></div>
+      </section>
+      <section class="features-wrapper swiper">
+        <div class="features-wrapper__swiper-items swiper-wrapper">
+          <!-- <div class="features-wrapper__container swiper-slide">
+            <img class="features-wrapper__image" src="./assets/img/feature-lock.svg">
+            <div class="features-wrapper__text">
+              <strong class="features-wrapper__text--strong">Compra 100% segura</strong>
+              <span class="features-wrapper__text--span">Seus dados ficam projegidos</span>
+            </div>
+          </div> -->
+        </div>
+        <div class="swiper-button-prev features-wrapper__arrow"></div>
+        <div class="swiper-button-next features-wrapper__arrow"></div>
+      </section>
+    </main>
   </body>
 </html>
